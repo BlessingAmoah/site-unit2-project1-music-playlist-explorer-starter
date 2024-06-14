@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2f4f4f;
+    color: #00ffff;
+  }
+  header {
+    background-color: #2e2e2e;
+    color: white;
+    width: 100%;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    justify-content: space-between;
+    text-align: center;
+    color: #ffd700;
+  }
+  .featured-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    align-items: left;
+    gap: 2em;
+  }
+
+  footer {
+    background-color: #333;
+    color: #ffd700;;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  footer {
+    margin-top: 110px;
+  }
+
+
+  main {
+    padding: 0 2em;
+  }
+
+  .featured-image {
+    width: 800px;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+    padding-top: 10px;
+    margin: 15px;
+  }
+
+
+  .card {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .card img {
+    width: 100px;
+    height: auto;
+    justify-content: right;
+    margin-right: 80px;
+    margin: 10px;
+  }

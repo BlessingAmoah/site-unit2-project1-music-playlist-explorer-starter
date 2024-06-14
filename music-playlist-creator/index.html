@@ -3,23 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <!-- Your header content here -->
+        <p>Music Playlist Explorer<a href='http://127.0.0.1:5500/music-playlist-creator/featured.html' class='featured-link'><button class="featured-button">Featured Page</button></a>
+        </p>
+
     </header>
 
-    <main> 
+    <main>
         <!-- Your main content here -->
+        <div class="playlist-cards">
+        </div>
     </main>
+
+    <div id="editPlaylists" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;
+            </button>
+            <img class="modal-cover" src="" alt="Playlist Cover">
+            <h2></h2>
+            <p class="modal-creator"></p>
+            <p class="modal-likes"></p>
+            <button class="shuffle-button">Shuffle</button>
+            <span class="song-list"></span>
+
+            <h2>
+                Edit Song
+            </h2>
+            <form id="editForm">
+                <label for="editPlaylist">Playlist Name:</label>
+                <input type="text" id="editPlaylist"  name="editPlaylist" required>
+                <label for="editPlaylistcreator">Playlist Creator:</label>
+                <input type="text" id="editPlaylistcreator" name="editPlaylistcreator" required>
+                <div id="editSongField"></div>
+                <button type="button" id="addEditSong">Add Song</button>
+                <button type="submit">Save changes</button>
+            </form>
+
+        </div>
+    </div>
 
     <footer>
         <!-- Your footer content here -->
+        <p>&copy; 2024 Music Playlist Explorer</p>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
